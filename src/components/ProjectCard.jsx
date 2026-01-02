@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import './ProjectCard.css'
 
-// You should add a 'description' property to each project in your data.js for best results.
-
 function ProjectCard({ projects }) {
   const [current, setCurrent] = useState(0)
   const [animating, setAnimating] = useState(false)
@@ -89,7 +87,7 @@ function ProjectCard({ projects }) {
           }}
           title="Open Project"
         >
-          {/* Cute link icon (SVG) */}
+          
           <svg width="24" height="24" fill="none" stroke="#64748b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
             <path d="M10 14L21 3"></path>
             <path d="M21 3h-7"></path>

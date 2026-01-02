@@ -13,8 +13,8 @@ function App() {
         style={{
           textAlign: 'center',
           margin: '2.5rem auto 2rem auto',
-          maxWidth: 1000, // Increased width
-          width: '90vw',  // Responsive width
+          maxWidth: 1000, 
+          width: '90vw',  
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
