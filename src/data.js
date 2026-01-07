@@ -1,6 +1,11 @@
 
 export const projects = [
     {
+      title: "Stock Market Dashboard On The Cloud",
+      link: "https://stdcloud.streamlit.app/",
+      description: `Serverless data ingestion system with AWS, stateless cloud API`,
+    },
+    {
       title: "Pi Quiz App",
       link: "https://kengao0216.github.io/PiQuiz/",
       description: `Test any sequence of digits even with integrated speech recognition`,
