@@ -43,7 +43,7 @@ export const projects = [
     {
         title: "Wordle Probabilities",
         link: "https://github.com/KenGao0216/Wordle-Probabilities",
-        description: `Algorithmic approach to Wordle`,
+        description: `Algorithmic approach to Wordle in C++`,
     }, 
     {
         title: "Linear Algebra Paper",
