@@ -3,22 +3,22 @@ export const projects = [
     {
       title: "Stock Market Dashboard On The Cloud",
       link: "https://stdcloud.streamlit.app/",
-      description: `Serverless data ingestion system with AWS, stateless cloud API`,
+      description: `Serverless data ingestion system with AWS Lambda, DynamoDB and EventBridge. Python dashboard consumes data from stateless cloud API`,
     },
     {
       title: "Pi Quiz App",
       link: "https://kengao0216.github.io/PiQuiz/",
-      description: `Test any sequence of digits even with integrated speech recognition`,
+      description: `Test any sequence of digits even with integrated speech recognition built with Javascript`,
     },
     {
       title: "Solo Survivors",
       link: "https://play.unity.com/en/games/c700e386-e895-4e19-a786-6bfaf77b73cc/solo-survivor-game",
-      description: `Survive against enemies on an island by upgrading weapons`,
+      description: `Survive against enemies on an island by upgrading weapons. Built with Unity and C#`,
     },
     {
       title: "AGE ASCII Game Engine",
       link: "https://github.com/KenGao0216/AGE-ASCII-Game-Engine",
-      description: `A comprehensive game engine framework`,
+      description: `A comprehensive game engine framework built with C++ and Ncurses`,
     },
     {
       title: "Trading Engine",
@@ -38,7 +38,7 @@ export const projects = [
     {
         title: "Slideshow Assist",
         link: "https://github.com/KenGao0216/virtualPrez",
-        description: `App that uses computer vision to assist with slideshow presentations`,
+        description: `Use computer vision to assist with slideshow presentations. Built with Python`,
     }, 
     {
         title: "Wordle Probabilities",

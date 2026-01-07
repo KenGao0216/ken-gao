@@ -60,7 +60,7 @@ function ProjectCard({ projects }) {
         }}
         key={current}
       >
-        <div style={{ fontSize: "1.5rem", fontWeight: "bold", marginBottom: "0.7rem", color: "#334155" }}>
+        <div style={{ fontSize: "1.5rem", fontWeight: "bold", marginBottom: "0.7rem", color: "#334155", textAlign: "center" }}>
           {project.title}
         </div>
         <div style={{ fontSize: "1.05rem", color: "#64748b", marginBottom: "1.2rem", textAlign: "center" }}>
