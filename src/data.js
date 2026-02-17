@@ -1,6 +1,11 @@
 
 export const projects = [
     {
+      title: "BirdRL",
+      link: "https://github.com/KenGao0216/BirdRL",
+      description: `Training a DQN agent with Reinforcement Learning to play Flappy Bird`,
+    },
+    {
       title: "Stock Market Dashboard On The Cloud",
       link: "https://stdcloud.streamlit.app/",
       description: `Serverless data ingestion system with AWS Lambda, DynamoDB and EventBridge. Python dashboard consumes data from stateless cloud API`,

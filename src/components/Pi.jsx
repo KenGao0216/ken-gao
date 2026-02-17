@@ -1,42 +1,49 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function Pi({ digits, count }) {
   const [shown, setShown] = useState(0)
+  const [started, setStarted] = useState(false)
 
   useEffect(() => {
-    if (shown < count) {
-      const timeout = setTimeout(() => setShown(shown + 1), 8) 
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !started) {
+          setStarted(true)
+        }
+      },
+      { threshold: 0.2 }
+    )
+
+    const el = document.getElementById('pi-display')
+    if (el) observer.observe(el)
+    return () => observer.disconnect()
+  }, [started])
+
+  useEffect(() => {
+    if (started && shown < count) {
+      const timeout = setTimeout(() => setShown(shown + 1), 6)
       return () => clearTimeout(timeout)
     }
-  }, [shown, count])
+  }, [started, shown, count])
 
   const displayDigits = digits.slice(0, shown)
   const lines = []
-  for (let i = 0; i < displayDigits.length; i += 75) {
-    lines.push(displayDigits.slice(i, i + 75))
+  for (let i = 0; i < displayDigits.length; i += 60) {
+    lines.push(displayDigits.slice(i, i + 60))
   }
 
   return (
-    <div style={{
-      fontFamily: 'monospace',
-      fontSize: '1.3rem',
-      margin: '2rem auto',
-      color: '#334155',
-      borderRadius: '12px',
-      padding: '1.2rem',
-      maxWidth: 600,
-      letterSpacing: '0.08em',
-      textAlign: 'center',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center'
-    }}>
-      <div style={{ fontFamily: 'inherit', fontSize: '1.1rem', marginBottom: '0.7rem', color: '#64748b' }}>
-        Amount of pi memorised so far:
+    <div id="pi-display" className="pi-container">
+      <div className="pi-counter">
+        <span className="pi-counter-number">{shown > 1 ? shown - 1 : 0}</span>
+        <span className="pi-counter-label">digits revealed</span>
       </div>
-      {lines.map((line, idx) => (
-        <span key={idx}>{line}<br /></span>
-      ))}
+      <div className="pi-digits">
+        {lines.map((line, idx) => (
+          <span key={idx} className="pi-line">{line}</span>
+        ))}
+        {shown < count && <span className="pi-cursor">|</span>}
+      </div>
     </div>
   )
 }
