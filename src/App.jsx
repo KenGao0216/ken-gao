@@ -53,7 +53,7 @@ function App() {
           <div className="interests-tags">
             <span className="interest-tag">Basketball</span>
             <span className="interest-tag">Chess</span>
-            <span className="interest-tag">{piDigits.length - 1} digits of pi</span>
+            <span className="interest-tag">Pi</span>
           </div>
         </div>
         <div className="scroll-indicator">
