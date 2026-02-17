@@ -53,7 +53,7 @@ function App() {
           <div className="interests-tags">
             <span className="interest-tag">Basketball</span>
             <span className="interest-tag">Chess</span>
-            <span className="interest-tag">Pi</span>
+            <span className="interest-tag">Memorizing Pi</span>
           </div>
         </div>
         <div className="scroll-indicator">
