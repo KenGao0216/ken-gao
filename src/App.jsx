@@ -56,10 +56,6 @@ function App() {
             <span className="interest-tag">Memorizing Pi</span>
           </div>
         </div>
-        <div className="scroll-indicator">
-          <span>Scroll</span>
-          <div className="scroll-line" />
-        </div>
       </section>
 
       <div className="section-divider" />

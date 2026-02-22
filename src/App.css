@@ -132,7 +132,7 @@
 }
 
 .interests-label {
-  font-size: 0.8rem;
+  font-size: clamp(0.7rem, 1.5vw, 0.85rem);
   font-weight: 500;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -177,7 +177,7 @@
 }
 
 .scroll-indicator span {
-  font-size: 0.75rem;
+  font-size: clamp(0.65rem, 1.5vw, 0.75rem);
   color: var(--text-muted);
   letter-spacing: 0.1em;
   text-transform: uppercase;
