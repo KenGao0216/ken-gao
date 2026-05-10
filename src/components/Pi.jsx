@@ -21,7 +21,7 @@ function Pi({ digits, count }) {
 
   useEffect(() => {
     if (started && shown < count) {
-      const timeout = setTimeout(() => setShown(shown + 1), 6)
+      const timeout = setTimeout(() => setShown(shown + 1), 1)
       return () => clearTimeout(timeout)
     }
   }, [started, shown, count])
