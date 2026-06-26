@@ -6,6 +6,11 @@ export const projects = [
       description: `Training a DQN agent with Reinforcement Learning to play Flappy Bird`,
     },
     {
+      title: "AnalystMind",
+      link: "https://github.com/Wat-Street/AnalystMind",
+      description: `AnalystMind is a multi-agent system that simulates how different classes of institutional investors analyze a stock and arrive at a price target.`,
+    },
+    {
       title: "CEX-DEX-Regime-Analysis",
       link: "https://github.com/KenGao0216/CEX-DEX-Regime-Analysis",
       description: `Designed a research pipeline to investigate whether clustering of joint CEX-DEX market state features can discover distinct regimes that explain executable arbitrage beyond naive cross-venue price divergence`,
