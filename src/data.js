@@ -17,7 +17,7 @@ export const projects = [
     },
     {
       title: "Stock Market Dashboard On The Cloud",
-      link: "https://stdcloud.streamlit.app/",
+      link: "https://github.com/KenGao0216/StockMarketDashboard",
       description: `Serverless data ingestion system with AWS Lambda, DynamoDB and EventBridge. Python dashboard consumes data from stateless cloud API`,
     },
     {
