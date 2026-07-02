@@ -10,6 +10,7 @@ export const projects = [
       link: "https://github.com/Wat-Street/AnalystMind",
       description: `AnalystMind is a multi-agent system that simulates how different classes of institutional investors analyze a stock and arrive at a price target.`,
     },
+    
     {
       title: "CEX-DEX-Regime-Analysis",
       link: "https://github.com/KenGao0216/CEX-DEX-Regime-Analysis",
